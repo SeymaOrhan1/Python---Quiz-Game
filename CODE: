@@ -1,0 +1,86 @@
+CODE:
+
+import random
+
+print("Welcome To Computer Quiz!")
+
+playing= input("Do you want to play? ")
+
+if playing.lower().strip() != "yes":
+    quit()
+
+
+print("OK!Let's play:)")
+score=0
+right_answer=0
+
+answer = input("What does CPU stand for?\n-")
+
+if answer.lower()=="central processing unit":
+    print("Correct!")
+    score+=10
+    print("Your Score: " + str(score))
+    right_answer+=1
+else:
+    print("That's not the answer")
+    score-=10
+    print("Your Score: " + str(score))
+
+answer = input("What does GPU stand for?\n-")
+
+if answer.lower()=="general processing unit":
+    print("Correct!")
+    score+=10
+    print("Your Score: " + str(score))
+    right_answer+=1
+else:
+    print("That's not the answer")
+    score-=10
+    print("Your Score: " + str(score))
+
+answer = input("What is the big difference between list and tuple?\n-")
+
+if answer.lower()=="tuple is immutable but list is not":
+    print("Correct!")
+    score+=10
+    print("Your Score: " + str(score))
+    right_answer+=1
+else:
+    print("That's not the answer")
+    score-=10
+    print("Your Score: " + str(score))
+
+answer = input("What does HDMI stand for?\n-")
+
+if answer.lower()=="high definition multimedia interface":
+    print("Correct!")
+    score+=10
+    print("Your Score: " + str(score))
+    right_answer+=1
+else:
+    print("That's not the answer")
+    score-=10
+    print("Your Score: " + str(score))
+
+answer = input("What does SQL stand for?\n-")
+
+if answer.lower()=="structured query language":
+    print("Correct!")
+    score+=10
+    print("Your Score: " + str(score))
+    right_answer+=1
+else:
+    print("That's not the answer")
+    score-=10
+    print("Your Score: " + str(score))
+
+
+
+if (score<40):
+    print("You got " + str(right_answer) + " questions correct!")
+    print("You got " + str((right_answer/5)*100) + "%.")
+    print("Your Score: " + str(score))
+else:
+    print("Congrulations! You got " + str(right_answer) + " questions correct!")
+    print("You got " + str((right_answer/5)*100) + "%.")
+    print("Your Score: " + str(score))
